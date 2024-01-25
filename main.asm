@@ -8,17 +8,17 @@
 
 global _start
 section .rodata
-  wellcome_msg: db "Guess The Number -- By GRATHRRAM", 10
-  enter_msg:  db "Enter max number that can be generated: ", 10
-  numlow_msg: db "Number is too low!", 10
-  numbig_msg: db "Number is too Big!", 10
-  numbis_msg: db "You did it number is ", 10
+  wellcome_msg db "Guess The Number -- By GRATHRRAM", 10
+  enter_msg  db "Enter max number that can be generated: ", 10
+  numlow_msg db "Number is too low!", 10
+  numbig_msg db "Number is too Big!", 10
+  numbis_msg db "You did it number is ", 10
 
-  wellcome_len: equ $- wellcome_msg
-  enter_len:  equ $- enter_msg
-  numlow_len: equ $- numlow_msg 
-  numbig_len: equ $- numbig_msg
-  numbis_len: equ $- numbis_msg
+  wellcome_len equ $- wellcome_msg  
+  enter_len  equ $- enter_msg
+  numlow_len equ $- numlow_msg 
+  numbig_len equ $- numbig_msg
+  numbis_len equ $- numbis_msg
 
 section .text
 _start:
